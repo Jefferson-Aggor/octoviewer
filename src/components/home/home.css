@@ -1,0 +1,77 @@
+.home{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+    background-color: var(--primary-color);
+
+}
+
+.home-text{
+    text-align: center;
+}
+
+.home-text .home-icon{
+    font-size: 5rem;
+    color: var(--light-blue);
+    margin-bottom: 2rem;
+
+}
+.home-text h2{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-container input{
+    border: none;
+    padding: 1rem 1.5rem;
+    width: max-content;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home-container input:focus{
+    border: none;
+    outline: none;
+}
+
+.home-user{
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    /* padding: 1rem 1.3rem ; */
+    background-color: var(--light-blue);
+    margin-top: 3rem;
+    border-radius:5px ;
+    overflow: hidden; 
+
+}
+.home-user img{
+    height: 100%;
+   
+  
+}
+.home-user .user-name{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.home-user-details{
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem;
+}
+
+.home-user-details div p{
+    font-size: 1rem;
+}
