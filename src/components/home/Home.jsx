@@ -67,7 +67,7 @@ export const Home =  ({Loader}) => {
                        <FaGithub className='home-icon'/>
                        <h2>View Your OctoProfile </h2>
                    </div>
-                   <input type="text" name="user" id="octoname"  />
+                   <input type="text" name="user" id="octoname" placeholder='eg J-1Aggor' />
                </form>
                 {loading ?
                 <div className='loading'>
