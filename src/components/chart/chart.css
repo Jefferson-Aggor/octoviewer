@@ -1,0 +1,15 @@
+.details-charts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+   padding : 1rem 5rem;
+   width: 100%;
+   
+}
+
+@media screen and (max-width: 720px) {
+    .details-charts {
+        display: block;
+        padding : 1rem 2rem;
+    }
+}

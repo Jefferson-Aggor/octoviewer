@@ -1,13 +1,12 @@
-.details{
-
-}
+/* .details{
+    overflow-x: hidden;
+} */
 
 .details-header{
     background: var(--primary-color);
     height: 100vh;
     width: 100vw;
-    position: relative;
-    z-index: -1;
+    
 }
 
 .details-user-data {
@@ -40,8 +39,7 @@
 }
 .user-details-tags{
     margin-top: 3rem;
-    display: flex;
-   
+    display: flex; 
 }
 
 .user-details-tags div {
@@ -57,16 +55,7 @@
     font-size: 1.2rem;
 }
 
-.details-charts{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 1rem;
-   position: absolute;
-   top: 85%;
-   padding: 0 5rem;
-   
 
-}
 .chart{
 
     padding: 0.5rem 1rem;
@@ -143,4 +132,98 @@
 
 .repo-details p{
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 1700px) {
+    .details-user-data .image{
+        height: 15rem ;
+        width: 15rem;
+       
+    }
+
+    .details-user-data h2{
+        font-size: 3rem;
+       
+    }
+    .user-details-tags{
+        margin-top: 3rem;
+        display: flex;
+       
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .details-user-data .image{
+        height: 10rem ;
+        width: 10rem;
+       
+    }
+    .repos .repos-output{
+        display: block;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width:650px){
+    .details-user-data .image{
+        height: 6rem ;
+        width: 6rem;
+       
+    }
+    .user-details-tags div {
+        padding: 1rem 1.2rem;
+        
+    }
+    .user-details-tags{
+        display: block; 
+    }
+
+    .repos .title{
+      
+        padding: 0 2rem;
+        
+    }
+}
+@media screen and (max-width:460px){
+    .details-user-data h2{
+        font-size: 1.5rem;
+       
+    }
+
+    .repos .title{
+      display: block;
+      text-align: center;
+    }
+    .repos .title select{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .details-user-data .image{
+        height: 5rem ;
+        width: 5rem;
+       
+    }
+    .user-details-tags div{
+        padding: 0.5rem;
+    }
+    .details-user-data .tag{
+        margin-bottom: 0.5rem;
+    }
+
+    .repo-title{
+        font-size: 0.8rem;
+    }
+    .repos-desc{
+        font-size: 0.7rem;
+    }
+    .repos .repos-output{
+    
+        padding: 1rem 0.5rem;
+    }
+    .repos{
+        padding: 0.5rem;
+    }
+    
 }

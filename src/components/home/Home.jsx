@@ -8,7 +8,7 @@ import {FiGitCommit} from 'react-icons/fi';
 import './home.css';
 
 
-export const Home =  () => {
+export const Home =  ({Loader}) => {
     const [state, setState] = useState({
         name: null,
         loading: false,
@@ -56,12 +56,11 @@ export const Home =  () => {
         }
         fetchUser()
     },[name])
-   console.log(user)
     return (
         <div className='home'>
            
            <div className="home-container">
-               {loading ? <h2>Loading...</h2>: null}
+               
                {error ? <h2><Error data={error}/></h2>: null}
                <form action=""  method="get" onSubmit={handleSubmit}>
                    <div className="home-text">
@@ -70,6 +69,16 @@ export const Home =  () => {
                    </div>
                    <input type="text" name="user" id="octoname"  />
                </form>
+                {loading ?
+                <div className='loading'>
+                     <Loader   type="Puff"
+                    color="#00BFFF"
+                    height={100}
+                    width={100}
+                    timeout={3000} />
+                </div> 
+                : null}
+
                 {name !== null && !loading && !error? <Link to={`/details/${user.login}`}>
                     <div className="home-user">
                     <img src={user.avatar_url} alt="" />
