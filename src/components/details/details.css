@@ -183,6 +183,9 @@
         padding: 0 2rem;
         
     }
+    .repos{
+        padding: 0.5rem;
+    }
 }
 @media screen and (max-width:460px){
     .details-user-data h2{
@@ -197,6 +200,7 @@
     .repos .title select{
         margin-top: 1rem;
     }
+    
 }
 
 @media screen and (max-width: 380px) {
