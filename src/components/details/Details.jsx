@@ -135,7 +135,7 @@ export const Details = ({Loader}) => {
                             </div>
                             <div className="repo-details">
                                
-                                <p>{humanize.filesize(repo.size) }</p>
+                                <p>{(repo.size)/1024 +" kb" }</p>
                             </div>
                             
                         </div>
