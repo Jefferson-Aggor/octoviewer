@@ -135,7 +135,7 @@ export const Details = ({Loader}) => {
                             </div>
                             <div className="repo-details">
                                
-                                <p>{(repo.size)/1024 +" kb" }</p>
+                                <p>{Math.floor((repo.size)/1024).toFixed(2) + "kb"}</p>
                             </div>
                             
                         </div>
